@@ -20,7 +20,7 @@ andmebaasidega seotud SQL kood ja konspektid
   ```
   ## SQL - structure Query Language - struktureeritud päringu keel
   - Tabeli loomine
-    ```
+ ```
  CREATE TABLE opilane(
  opilaneID int Primary Key identity(1,1), --automaatselt täibsd numbri
  eesnimi varchar(25),
@@ -33,7 +33,7 @@ andmebaasidega seotud SQL kood ja konspektid
  );
 
  SELECT * FROM opilane;
-    ```
+```
     
   - Admete sisetamine tabelisse
     ```
