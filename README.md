@@ -67,7 +67,8 @@ andmebaasidega seotud SQL kood ja konspektid
       3. CHECK
       4. NOT NULL
       5. UNIQUE
-      --FOREIGN KEY
+
+ ```
  CREATE TABLE opetamine(
  opetanineId int PRIMARY KEY identity(1,1),
  kuupaev DATE,
@@ -81,3 +82,4 @@ andmebaasidega seotud SQL kood ja konspektid
 
  INSERT INTO opetamine
  VALUES ('2026-04-16', 'andmebaasid', 6, 4)
+ ```
