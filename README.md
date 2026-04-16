@@ -83,3 +83,45 @@ andmebaasidega seotud SQL kood ja konspektid
  INSERT INTO opetamine
  VALUES ('2026-04-16', 'andmebaasid', 6, 4)
  ```
+
+
+
+
+```
+--õpetaja
+CREATE TABLE opetaja(
+opetajaID int Primary Key identity(1,1),
+nimi varchar(25),
+epost varchar(35),
+ruhm  varchar(30) );
+ 
+SELECT * FROM opetaja;
+INSERT INTO opetaja
+VALUES ('Anton', 'anton@gmail.com','TITpv24');
+
+INSERT INTO opetaja (nimi, epost, ruhm)
+VALUES ('Lury', 'lury@gmail.com', 'TITpv24'),
+('Agapov', 'agapov@gmail.com','TITpv24');
+
+--2
+CREATE TABLE tund(
+tundId int PRIMARY KEY identity(1,1),
+kuupaev DATE,
+tundnimi varchar(30),
+opetajaID int,
+FOREIGN KEY (opetajaID) REFERENCES opetaja(opetajaID),
+opetamineID int,
+FOREIGN KEY (opetamineID) REFERENCES opetaja(opetamineID)
+);
+
+SELECT * FROM tund;
+
+INSERT INTO tund(kuupaev, tundnimi, opetajaID, opetamineID)
+VALUES ('2026-04-16', 'Windows', 1,1),
+('2026-04-17', 'Linux', 2,2),
+('2026-04-18', 'Operatsioone', 3,3);
+TRUNCATE TABLE tund;
+
+DROP TABLE tund
+
+```
