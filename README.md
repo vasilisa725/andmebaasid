@@ -6,7 +6,7 @@ andmebaasidega seotud SQL kood ja konspektid
 - tabel = olem - сущность - entity
 - veerg = väli - поле*столбец
 - rida = kirje -записи
-- admevaasi haildussüstem - tarkvara, millega abil saab luua andmebaas: mariaDB / XAMPP, SQL SERVER management Studio <img width="527" height="545" alt="{75CF2265-9EB7-43D8-89F7-6ED892CD35DC}" src="https://github.com/user-attachments/assets/2187035c-4c49-44b0-9aa2-8ea7c5a2ba00" />
+- admevaasi haildussüstem - tarkvara, millega abil saab luua andmebaas: mariaDB / XAMPP, SQL SERVER management Studio <img width="300" height="300" alt="{75CF2265-9EB7-43D8-89F7-6ED892CD35DC}" src="https://github.com/user-attachments/assets/2187035c-4c49-44b0-9aa2-8ea7c5a2ba00" />
 - primaarne võti - PRIMARY KEY - veerg(tavaliselt id nimega), unikaalne identifikaator, mis eristab iga kirje.
 - välisvõti - FOREIGN KEY -FK- veerg,mis loob seos teise tabeli primaarvõtmega.
 - paring - QUERY - запрос
