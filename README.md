@@ -31,10 +31,53 @@ andmebaasidega seotud SQL kood ja konspektid
  aadress TEXT,
  keskmineHinne decimal(2,1) --(2--kokku, 1-peale komatnt 4.5)
  );
-
  SELECT * FROM opilane;
+ --tabeli täitmine 
+ INSERT INTO opilane
+ VALUES ('Artjom', 'Jegorov', '2000-12-10',1, '+372848','Tallinn', 4.5);
+
+ INSERT INTO opilane(perenimi, eesnimi, keskmineHinne)
+ VALUES ('Merkulova', 'Irina', 4.2),
+ ('Vasilenko', 'Vasilisa', 4.2),
+ ('Talibova', 'Leyla', 4.2),
+ ('Suvorov', 'Marko', 4.2);
+
+ --andmete uue
+ UPDATE opilane SET stip=1, aadress='Tallinn';
+
+ UPDATE opilane SET stip=1, aadress='Tartu' WHERE opilaneID=5;
+ DROP TABLE opilane;
+ DELETE FROM opilane WHERE opilaneID=2;
+ Select * from opilane;
 ```
     
   - Admete sisetamine tabelisse
     ```
     ```
+    ## Seosed (tabelivahelised seosed)
+    - ülk-ühele (nt mees-naine)
+    - üks-mitmele (nt ema-lapsed)
+    <img width="300" height="300" alt="{95A32110-C29B-4A97-92B8-81AA90C89945}" src="https://github.com/user-attachments/assets/ea44d13c-d0b6-41c8-973a-4bd06dcea69b" />
+    - mitu-mitmele (nt õpilane - õpetajad)
+
+      ## PIIRANGUD
+      constraint - ограничения (5)
+      1. PRIMARY KEY
+      2. FOREIGN KEY
+      3. CHECK
+      4. NOT NULL
+      5. UNIQUE
+      --FOREIGN KEY
+ CREATE TABLE opetamine(
+ opetanineId int PRIMARY KEY identity(1,1),
+ kuupaev DATE,
+ oppeaine varchar(30),
+ opilaneID int,
+ FOREIGN KEY (opilaneID) REFERENCES opilane(opilaneID),
+ hinne int CHECK(hinne<=5));
+
+ SELECT * FROM opetamine;
+ SELECT * FROM opilane;
+
+ INSERT INTO opetamine
+ VALUES ('2026-04-16', 'andmebaasid', 6, 4)
