@@ -125,3 +125,26 @@ TRUNCATE TABLE tund;
 DROP TABLE tund
 
 ```
+
+
+
+
+
+
+
+## ALTER TABLE
+- tabeli struktuuri muutmine (struktuur: veerudenimed, andmetüübid, piirangud)
+1. uue veeru lisamine
+```
+ --uue veeru lisamine 
+ ALTER TABLE opilane ADD isikukood varchar(11);
+
+ --veeru kustutamine
+ ALTER TABLE opilane DROP COLUMN isikukood; 
+
+ --andmetüübi muutmine varchar(11)-->char(11)
+ ALTER TABLE opilane ALTER COLUMN isikukood char(11); 
+
+--sessehitatud protseduur, mis näitab tabeli struktuur
+sp_help opilane;
+```
