@@ -148,3 +148,40 @@ DROP TABLE tund
 --sessehitatud protseduur, mis näitab tabeli struktuur
 sp_help opilane;
 ```
+
+
+```
+--pirangute lisamine 
+CREATE TABLE ryhm(
+ryhmId int,
+ryhmNimi char(10));
+drop table ryhm;
+
+sp_help ryhm;
+
+ALTER TABLE ryhm ADD CONSTRAINT pk_ryhm PRIMARY KEY (ryhmId);
+ 
+--UNIQUE lisamine 
+ALTER TABLE ryhm ADD CONSTRAINT un_ryhm UNIQUE (ryhmNIMI);
+
+--kontrollimiseks
+SELECT * FROM ryhm;
+INSERT INTO ryhm (ryhmId, ryhmNimi)
+VALUES (2, 'TITpe24');
+
+--kontrollimiseks
+SELECT * FROM ryhm;
+INSERT INTO ryhm (ryhmId, ryhmNimi)
+VALUES (1, 'TITpv24');
+
+--lisamine Foreign Key - võõrvõti-välisvõti
+ ALTER TABLE opilane ADD ryhmId int;
+ SELECT * FROM opilane;
+ SELECT * FROM ryhm;
+ ALTER TABLE opilane ADD CONSTRAINT fk_ryhm FOREIGN KEY (ryhmId) REFERENCES ryhm(ryhmId);
+
+ --kontrollimiseks
+ INSERT INTO opilane
+ VALUES ('Torov', 'Maksim', '2002-12-10',1, '+3728597', 'Tartu', 4.5, 33);
+ ('Torov', 'Olia', '2002-12-10',1, '+3728597', 'Tartu', 4.5, 33);
+```
