@@ -5,7 +5,9 @@ andmebaasidega seotud SQL kood ja konspektid
 - [Admetüübid](#admetuubid)
 - [SQL - structure Query Language - struktureeritud päringu keel](#sql-structure-Query-Language-struktureeritudpäringukeel)
 - [Seosed](#seosed)
--
+- [Piirangud](#piirangud)
+- [ALTER TABLE](#ALTER TABLE)
+
 
 
 
@@ -69,7 +71,7 @@ andmebaasidega seotud SQL kood ja konspektid
     <img width="300" height="300" alt="{95A32110-C29B-4A97-92B8-81AA90C89945}" src="https://github.com/user-attachments/assets/ea44d13c-d0b6-41c8-973a-4bd06dcea69b" />
     - mitu-mitmele (nt õpilane - õpetajad)
 
-      ## PIIRANGUD
+      ## Piirangud
       constraint - ограничения (5)
       1. PRIMARY KEY
       2. FOREIGN KEY
