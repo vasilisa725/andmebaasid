@@ -96,7 +96,7 @@ andmebaasidega seotud SQL kood ja konspektid
  ```
 
 
-
+r
 
 ```
 --õpetaja
