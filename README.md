@@ -1,10 +1,11 @@
 # Andmebaasid
 andmebaasidega seotud SQL kood ja konspektid
 ## Sisukord
--[Põhimõisted](#-pohimoisted)
--[Admetüübid](#-admetuubid)
--[SQL - structure Query Language - struktureeritud päringu keel](sql-structure-Query-Language-struktureeritudpäringukeel)
--[]()
+- [Põhimõisted](#pohimoisted)
+- [Admetüübid](#admetuubid)
+- [SQL - structure Query Language - struktureeritud päringu keel](#sql-structure-Query-Language-struktureeritudpäringukeel)
+- [Seosed](#seosed)
+-
 
 
 
