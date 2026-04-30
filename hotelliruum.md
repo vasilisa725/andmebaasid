@@ -123,3 +123,6 @@ INSERT INTO hosted_room
 VALUES (3,2);
 ```
 <img width="260" height="75" alt="{F78CA3D2-B78D-4F20-9676-32297F6E5159}" src="https://github.com/user-attachments/assets/8405a152-894a-4489-9583-cc5f456da1a6" />
+
+<img width="961" height="827" alt="{58D375DB-5C0D-4451-A028-FADEB521E1C2}" src="https://github.com/user-attachments/assets/0be13879-9cd2-4bd4-92fa-526f9a45dfcd" />
+
