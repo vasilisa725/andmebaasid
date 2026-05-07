@@ -88,3 +88,23 @@ EXEC muudatus 'add', 'guest', 'testVeerg', int
 SELECT * FROM guest
 EXEC muudatus 'drop', 'guest', 'testVeerg'
 ```
+
+```
+-- Protseduur, mis kuvab eesnimi, arveSumma ja lisab automaatselt hinnangu 
+
+CREATE PROCEDURE kuvaArveHinnang
+AS
+BEGIN
+    SELECT 
+        firstname,
+        arveSumma,
+        CASE 
+            WHEN arveSumma <= 1000 THEN 'väike summa'
+            ELSE 'suur summa'
+        END AS hinnang
+    FROM guest;
+END;
+
+--kutse
+EXEC kuvaArveHinnang
+```
