@@ -4,7 +4,8 @@
 
 ```
 CREATE PROCEDURE lisaGuest
---@parameetrid 
+--@parameetrid
+
 @ussNimi varchar(25),
 @uusPerenimi varchar(30),
 @kuupaev date
