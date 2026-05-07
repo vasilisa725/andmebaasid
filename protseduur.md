@@ -33,3 +33,29 @@ END
 
 EXEC otsing1taht 'L'
 ```
+
+```
+--lisame uus veerg
+ALTER TABLE guest ADD arveSumma money;
+SELECT * FROM guest 
+
+Update guest set arveSumma=200 WHERE guestId=2;
+
+--5 OUTPUT parameetrid (min ja max väärtus)
+CREATE PROCEDURE minmaxArve
+    @minArve MONEY OUTPUT,
+    @maxArve MONEY OUTPUT
+AS
+BEGIN
+    SELECT 
+        @minArve = MIN(arveSumma),
+        @maxArve = MAX(arveSumma)
+    FROM guest;
+END;
+
+--kutse
+DECLARE @minArve MONEY, @maxArve MONEY;
+EXEC minmaxArve @minArve OUTPUT, @maxArve OUTPUT;
+PRINT 'Min arve = ' + CONVERT(varchar, @minArve);
+PRINT 'Max arve = ' + CONVERT(varchar, @maxArve);
+```
