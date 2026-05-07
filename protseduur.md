@@ -10,11 +10,9 @@ CREATE PROCEDURE lisaGuest
 @kuupaev date
 AS
 BEGIN
-
 --protseduuri
 INSERT INTO guest(firstname, lastname, memberSince)
 VALUES (@ussNimi, @uusPerenimi, @kuupaev);
 SELECT * FROM guest;
-
 END
 ```
