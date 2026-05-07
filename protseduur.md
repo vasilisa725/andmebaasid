@@ -59,3 +59,32 @@ EXEC minmaxArve @minArve OUTPUT, @maxArve OUTPUT;
 PRINT 'Min arve = ' + CONVERT(varchar, @minArve);
 PRINT 'Max arve = ' + CONVERT(varchar, @maxArve);
 ```
+
+```
+-- Protseduur veeru lisamiseks või kustutamiseks 
+CREATE PROCEDURE muudatus
+    @tegevus varchar(10),
+    @tabelinimi varchar(25),
+    @veerunimi varchar(25),
+    @tyyp varchar(25) = NULL
+AS
+BEGIN
+    DECLARE @sqltegevus varchar(max);
+
+    SET @sqltegevus = CASE 
+        WHEN @tegevus = 'add' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' ADD ', @veerunimi, ' ', @tyyp)
+
+        WHEN @tegevus = 'drop' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' DROP COLUMN ', @veerunimi)
+    END;
+
+    PRINT @sqltegevus;
+    EXEC (@sqltegevus);
+END;
+
+--kutse 
+EXEC muudatus 'add', 'guest', 'testVeerg', int
+SELECT * FROM guest
+EXEC muudatus 'drop', 'guest', 'testVeerg'
+```
