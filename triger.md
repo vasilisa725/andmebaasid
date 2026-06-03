@@ -3,7 +3,7 @@
 [Põhimõsted](README.md) | [Protseduur](protseduur.md) | [Protseduur 20.05.2026](20.05.2026.md)  |[Kysimused](KYSIMYSED.md) | [GBS](gbs.md) | [Hotelliruum](hotelliruum.md) | [Keys](keys.md) | [Trigger](triger.md)
 
 - andmebaasi objekt, mis automaatsrlt käivitud tabeli sundmused (INSERT, UPDATE, DELETE)
-## SQL
+
 ```sql
 create database trigertitpv24;
 USE trigertitpv24;
@@ -141,7 +141,6 @@ DENY SELECT ON logi TO sekretarVasilisa;
 
 DENY ALTER ANY DATABASE DDL TRIGGER TO sekretarVasilisa;
 ```
-
 <img width="921" height="565" alt="{D52A341C-1903-4B86-B104-4777E52E38C0}" src="https://github.com/user-attachments/assets/e8bc79b6-04d8-48c1-b142-5dd4496281d9" />
 
 
