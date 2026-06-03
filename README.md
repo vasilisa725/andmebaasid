@@ -1,4 +1,7 @@
-# Andmebaasid
+# Andmebaaside konspektid | Vasilisa
+
+[Põhimõsted](README.md) | [Protseduur](protseduur.md) | [Kodutöö](protseduurid 20.05.2026.md)
+
 andmebaasidega seotud SQL kood ja konspektid
 ## Sisukord
 - [Põhimõisted](#pohimoisted)
