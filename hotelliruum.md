@@ -1,5 +1,7 @@
 ## Andmebaas Hotelliruumi reserveerimine
-```
+
+[Põhimõsted](README.md) | [Protseduur](protseduur.md) | [Protseduur 20.05.2026](20.05.2026.md)  |[Kysimused](KYSIMYSED.md) | [GBS](gbs.md) | [Hotelliruum](hotelliruum.md) | [Keys](keys.md) | [Trigger](triger.md)
+
 --1. guest
 
 CREATE TABLE guest(
