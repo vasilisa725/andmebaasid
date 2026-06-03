@@ -1,0 +1,21 @@
+# SQL Server kasutajate loomine ja õiguste määramine
+
+<img width="869" height="255" alt="{5A30F423-D805-4766-A42B-87565D1F1802}" src="https://github.com/user-attachments/assets/b8a1977f-b7d7-46ae-bb76-34f47a944a12" />
+
+1.Protseduur: Kasutaja kustutamine
+<img width="721" height="628" alt="{BF34FE64-6493-4367-B58E-90ADE9BF0C5C}" src="https://github.com/user-attachments/assets/86ce1f7e-c84c-40a5-b943-67b5d9905e22" />
+
+2.Protseduur: Kasutaja lisamine
+<img width="647" height="529" alt="{CAC7F08C-7F1B-48B8-B738-CF6C3060C41D}" src="https://github.com/user-attachments/assets/ad4ff7c1-3105-4d7c-9644-9514f9881a3e" />
+
+3.Protseduur: tabeli värskendamine
+<img width="728" height="595" alt="{CA4E1437-E1D1-4B8D-8B3B-F449D0345595}" src="https://github.com/user-attachments/assets/d17c7783-bba5-4e34-8786-5b27b0491887" />
+
+4.Protseduur: Hea Halb Klient
+<img width="735" height="523" alt="{A558B27A-A581-41F5-96D0-A1937D2C5132}" src="https://github.com/user-attachments/assets/726ad907-26cd-434c-907d-188496efb4a8" />
+
+5.Protseduur: Otsi esitähe järgi
+<img width="717" height="477" alt="{3CB6C404-6D13-4AB5-86CE-6D7DB0F961DF}" src="https://github.com/user-attachments/assets/beb1bcf4-2e3f-4367-886d-5b8d0e956c61" />
+
+6.Protseduur: minimaalne maksimaalne hind
+<img width="733" height="489" alt="{997B8D52-77B0-463C-8BA0-CD68ADE57C04}" src="https://github.com/user-attachments/assets/0ce4308c-5162-4208-82bc-3b7c7dbc491d" />
