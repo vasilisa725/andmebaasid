@@ -1,6 +1,6 @@
 # Andmebaaside konspektid | Vasilisa
 
-[Põhimõsted](README.md) | [Protseduur](protseduur.md) | [Kodutöö](protseduurid 20.05.2026.md)
+[Põhimõsted](README.md) | [Protseduur](protseduur.md) | [Protseduur 20.05.2026](20.05.2026.md)  |[Kysimused](KYSIMYSED.md) |[Kasutaja loomine SQL Serveris](KasutajaloomineSQLServeris.md) | [GBS](gbs.md) | [Hotelliruum](hotelliruum.md) | [Keys](keys.md) | [Trigger](triger.md)
 
 andmebaasidega seotud SQL kood ja konspektid
 ## Sisukord
