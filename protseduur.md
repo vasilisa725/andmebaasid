@@ -1,4 +1,7 @@
 ## SQL Protseduurid
+
+[Põhimõsted](README.md) | [Protseduur](protseduur.md) | [Protseduur 20.05.2026](20.05.2026.md)  |[Kysimused](KYSIMYSED.md) | [GBS](gbs.md) | [Hotelliruum](hotelliruum.md) | [Keys](keys.md) | [Trigger](triger.md)
+
 - store procedure - salvestatud protseduurid - хранимые процедуры
 - sama nagu funktsioonid programmeerimises - mingi tehevused mis käivitakse automaatselt protseduuri kasutamisel
 
