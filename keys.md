@@ -1,4 +1,7 @@
 ## Andmebaasi võtmed (Keys)
+
+[Põhimõsted](README.md) | [Protseduur](protseduur.md) | [Protseduur 20.05.2026](20.05.2026.md)  |[Kysimused](KYSIMYSED.md) | [GBS](gbs.md) | [Hotelliruum](hotelliruum.md) | [Keys](keys.md) | [Trigger](triger.md)
+
 1.Andmebaaside relatsioonimudelis on primaarvõti määratud atribuutide (veergude) kogum, mis suudab usaldusväärselt tuvastada ja eristada tabeli iga üksikut kirjet.
 Andmebaasi looja saab valida tabelist olemasoleva unikaalse atribuudi või atribuutide kombinatsiooni (loomulik võti), mis toimib primaarvõtmena, või luua uue atribuudi, mis sisaldab unikaalset ID-d, mis eksisteerib ainult selleks otstarbeks (asendusvõti).
 
