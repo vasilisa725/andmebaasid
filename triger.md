@@ -4,7 +4,7 @@
 
 - andmebaasi objekt, mis automaatsrlt käivitud tabeli sundmused (INSERT, UPDATE, DELETE)
 ## SQL
-```
+```sql
 create database trigertitpv24;
 USE trigertitpv24;
 --
