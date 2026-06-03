@@ -1,9 +1,11 @@
 ## Andmebaas Hotelliruumi reserveerimine
 
-[Põhimõsted](README.md) | [Protseduur](protseduur.md) | [Protseduur 20.05.2026](20.05.2026.md)  |[Kysimused](KYSIMYSED.md) | [GBS](gbs.md) | [Hotelliruum](hotelliruum.md) | [Keys](keys.md) | [Trigger](triger.md)
+[Põhimõsted](README.md) | [Protseduur](protseduur.md) | [Protseduur 14.05.2026](14.05.2026.md) | [GBS](gbs.md) | [Hotelliruum](hotelliruum.md) | [Keys](keys.md) | [Trigger](triger.md)
+
 
 --1. guest
 
+```sql
 CREATE TABLE guest(
 guestID int Primary key identity(1,1),
 firstname varchar(80),
@@ -17,7 +19,7 @@ VALUES ('vasilisa', 'vasilenko', '2026-04-30');
 ```
 <img width="291" height="81" alt="{D046B9C3-4B39-46A1-96F3-89F37F637945}" src="https://github.com/user-attachments/assets/4ef0b6dd-2f63-4893-bd0d-f265528e9015" />
 
-```
+```sql
 --2. reservation
 
 CREATE TABLE reservation(
@@ -36,7 +38,7 @@ VALUES ('2026-01-12','2026-11-05','admin', 3);
 <img width="365" height="78" alt="{D358D900-5AC6-4B4A-BF5A-75C3E2EA0702}" src="https://github.com/user-attachments/assets/8b7f2402-a399-4ffd-8fc8-199a8fc937c0" />
 
 
-```
+```sql
 --3. room_type
 
 CREATE TABLE room_type(
@@ -52,7 +54,7 @@ VALUES ('luks', 4);
 <img width="263" height="76" alt="{4DDEFAC4-8984-452F-85DE-E5007A4EEF5F}" src="https://github.com/user-attachments/assets/7d1b48e9-1d9f-4ece-86e1-a1a812bcef08" />
 
 
-```
+```sql
 --4. room
 
 CREATE TABLE room(
@@ -72,8 +74,7 @@ VALUES ('3', 'room3', 'reserved', 1,3);
 <img width="367" height="76" alt="{FFC35378-47CF-42F7-AEFA-001C5F14CD31}" src="https://github.com/user-attachments/assets/d57e3723-be95-418a-a85e-910a3efff9c7" />
 
 
-```
-
+```sql
 --5. reserved_room
 CREATE TABLE reserved_room(
 reserved_roomID int PRIMARY KEY identity(1,1),
@@ -93,7 +94,7 @@ VALUES (2,3,1, 'ready');
 <img width="429" height="78" alt="{13146C88-9BD4-408F-914F-60C925957869}" src="https://github.com/user-attachments/assets/06bee5e3-15e2-4819-9489-650c14adec31" />
 
 
-```
+```sql
 CREATE TABLE occupied_room(
 occupied_roomID int PRIMARY KEY identity(1,1),
 check_in DATE,
@@ -111,7 +112,7 @@ VALUES ('2004-07-04', '2007-09-03', 1,1);
 <img width="404" height="77" alt="{F82ADCDF-E150-411E-8B45-8920D473F64C}" src="https://github.com/user-attachments/assets/059e70c7-9f39-4c24-b40f-6b8a914385a6" />
 
 
-```
+```sql
 CREATE TABLE hosted_room(
 hosted_atID int PRIMARY KEY identity(1,1),
 guest_id int,
