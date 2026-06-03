@@ -97,6 +97,47 @@ ON deleted.linnID=inserted.linnID;
 UPDATE linnad SET linnanimi='Pärnu-väike', rahvaarv=50 WHERE linnID=1;
 select * from linnad;
 select * from logi;
+
+DISABLE TRIGGER linnaLisamine ON linnad;
+DISABLE TRIGGER linnaKustutamine ON linnad;
+
+--kombineerimine insert ja delete triger
+CREATE TRIGGER linnaLisaKustuta
+ON linnad --tabelinimi, mis on vaja jälgida
+FOR DELETE, INSERT
+AS
+BEGIN 
+INSERT INTO logi(kasutaja, aeg, toiming, andmed)
+SELECT
+SYSTEM_USER,
+GETDATE(),  --aeg
+'on tehtud DELETE käsk',  --toiming
+CONCAT ('linn:', deleted.linnanimi , ' rahvaarv: ' , deleted.rahvaarv) --andmed
+FROM deleted
+
+UNION ALL
+
+SELECT
+SYSTEM_USER,
+GETDATE(),  --aeg
+'on tehtud DELETE käsk',  --toiming
+CONCAT ('linn:', inserted.linnanimi , ' rahvaarv: ' , inserted.rahvaarv) --andmed
+FROM inserted;
+END;
+
+INSERT INTO linnad(linnanimi, rahvaarv)
+VALUES ('Tallinn', 60000);
+select * from linnad;
+select * from logi;
+
+DELETE FROM linnad WHERE linnID=2;
+
+--kasutaja sekretarVasiisa õigused - lisamine, kustutamine ja uuedamine tabelis linnad, ei näe tabeli logi ja ei saa muuta trigerid
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON linnad TO sekretarVasilisa;
+DENY SELECT ON logi TO sekretarVasilisa;
+
+DENY ALTER ANY DATABASE DDL TRIGGER TO sekretarVasilisa;
 ```
 
 <img width="921" height="565" alt="{D52A341C-1903-4B86-B104-4777E52E38C0}" src="https://github.com/user-attachments/assets/e8bc79b6-04d8-48c1-b142-5dd4496281d9" />
